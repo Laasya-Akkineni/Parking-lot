@@ -7,7 +7,3 @@ Slot_number_for_car_with_number PB-01-HH-1234
 Leave 2
 Park HR-29-TG-3098 driver_age 39
 Vehicle_registration_number_for_driver_of_age 18
-Park KP-01-HH-1234 driver_age 21
-Park PM-01-HH-1234 driver_age 21
-Park KO-01-HH-1234 driver_age 21
-Park PL-01-HH-1234 driver_age 21
