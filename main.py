@@ -1,4 +1,4 @@
-file = open("input.py")
+file = open("input.txt")
 contents = file.read()
 file.close()
 list_input_commands = list(contents.split("\n"))
