@@ -30,11 +30,17 @@ for i in range(len(list_input_commands)):
             for i in range(len(list_drivers_age)):
                 if list_drivers_age[i] == driver_age:
                     count_of_drivers.append(i + 1)
-            print(",".join(str(i) for i in count_of_drivers))
-
+            if len(count_of_drivers)>0:    
+               print(",".join(str(i) for i in count_of_drivers))
+            else:
+              print("No drivers belong to the age group requested")   
+                
         else:
             c = "".join(list_input_commands[i][-13:])
-            print(list_vehicle_numbers.index(c) + 1)
+            if c in list_vehicle_numbers:
+              print(list_vehicle_numbers.index(c) + 1)
+            else:
+              print("There is no vehicle with the requested registration number")  
     if "Leave" in list_input_commands[i]:
         print("Slot number " + str(list_input_commands[i][-1]) + " vacated, the car with vehicle registration number " + '"' +list_vehicle_numbers[int(list_input_commands[i][-1]) - 1] + '"' +" left the space, the driver of the car was of age " +str(list_drivers_age[int(list_input_commands[i][-1]) - 1]))
         list_vehicle_numbers[int(list_input_commands[i][-1]) - 1] = ""
